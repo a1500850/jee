@@ -42,8 +42,8 @@ public class HenkiloListaTietokantahakuServlet extends HttpServlet {
 		
 		//TIETOKANTAHAKU
 		
-		String username = "javaee";
-		String password = "deNUfh27t";
+		String username = "a1500850";
+		String password = "xePEoz88r";
 		String url = "jdbc:mariadb://localhost/javaee";
 
 		Connection yhteys = null;
