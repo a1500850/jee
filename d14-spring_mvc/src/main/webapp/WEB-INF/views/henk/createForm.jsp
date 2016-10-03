@@ -28,6 +28,7 @@
 				</p>
 				<p>	
 					<button type="submit">Lisää</button>
+					<p><a href="lista">Listaa kaikki</a>
 				</p>
 			</fieldset>
 		</form:form>

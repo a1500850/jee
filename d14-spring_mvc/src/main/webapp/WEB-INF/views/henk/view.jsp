@@ -16,5 +16,6 @@
 	<p><c:out value="${henkilo.etunimi}" default="-----"/></p>
 	<p><c:out value="${henkilo.sukunimi}" default="-----"/></p>
 	<p><a href="uusi">Takaisin</a>
+	<p><a href="lista">Listaa kaikki</a>
 </body>
 </html>

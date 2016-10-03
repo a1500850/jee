@@ -9,9 +9,9 @@
 		<property name="jalat">
 			<list>
 				<ref bean="rengas1"/>
-				<ref bean="rengas2"/>
-				<ref bean="rengas3"/>
-				<ref bean="rengas4"/>
+				<ref bean="rengas1"/>
+				<ref bean="rengas1"/>
+				<ref bean="rengas1"/>
 			</list>
 		</property>
 	</bean>

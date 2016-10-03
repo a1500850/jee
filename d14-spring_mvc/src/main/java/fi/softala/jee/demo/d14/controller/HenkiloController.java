@@ -1,5 +1,8 @@
 package fi.softala.jee.demo.d14.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Controller;
@@ -52,6 +55,13 @@ public class HenkiloController {
 		Henkilo henkilo = dao.etsi(id);
 		model.addAttribute("henkilo", henkilo);
 		return "henk/view";
+	}
+	//Kaikkien henkilöiden näyttäminen
+	@RequestMapping(value="lista", method=RequestMethod.GET)
+	public String getView(Model model) {
+		List<Henkilo> henkilot = dao.haeKaikki();
+		model.addAttribute("henkilot", henkilot);
+		return "henk/lista";
 	}
 	
 }
