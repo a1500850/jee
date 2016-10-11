@@ -3,8 +3,11 @@ package fi.softala.jee.demo.d15.bean;
 //standardeja jsr303-annotaatioita
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+
 //hibernatevalidaattorin oma annotaatio
 import org.hibernate.validator.constraints.Email;
+
+import fi.softala.jee.demo.d15.bean.validation.AlkaaIsollaKirjaimella;
 //itse tehty validaattoriannotaatio
 import fi.softala.jee.demo.d15.bean.validation.Paakaupunkiseutu;
 
@@ -13,9 +16,11 @@ public class HenkiloImpl implements Henkilo {
 	private int id;
 
 	@Size(min = 1, max = 255)
+	@AlkaaIsollaKirjaimella
 	private String etunimi;
 
 	@Size(min = 1, max = 255)
+	@AlkaaIsollaKirjaimella
 	private String sukunimi;
 
 	@Size(min = 1, max = 255)
@@ -23,6 +28,7 @@ public class HenkiloImpl implements Henkilo {
 	private String sahkoposti;
 
 	@Size(min = 1, max = 255)
+	@AlkaaIsollaKirjaimella
 	private String lahiosoite;
 
 	@Pattern(regexp = "\\d{5}")
